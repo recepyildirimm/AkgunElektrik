@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="script.js"></script>
+    <script type="module" src="database2.js"></script>
+    <script type="module" src="server.js"></script>
+    <title>Document</title>
+   <style>
+    body{
+        background-color: #16223A;
+
+    }
+   
+    </style>
+</head>
+<body>
+    <div align="center">
+        <img src="akgunLogo1.png" width="10%" height="10%"/>
+    <div>
+
+<div class="grid grid-cols-1  md:grid-cols-3 ">
+    <div class="text-white bg-[#1D2E4A] mx-8 my-8 grid grid-rows-auto grid grid-cols-1 gap-4">
+        <div id = "santralAdi1" class="h-1 mx-3 my-4">DORA</div>
+        <div class="h-auto text-white bg-[#97ca81] mx-8 mt-2 grid grid-cols-2">
+            <div class="text-black mx-4"> <img src="plugin.png" width="25%" height="25%" alt="">Üretim miktarı</div>
+            <div class="mt-8 mx-4">dbden çekilecek</div>
+        </div>
+            <div class="text-white bg-[#1dd2e8] mx-8 mt-2 grid grid-cols-2 grid-rows-3">
+            <div class="text-black mx-4 mt-2 "> <img src="thermometer.png" width="15%" height="15%" ax  lt="">Sıcaklık</div>
+            <div id="sehir1Sicaklik" class="mt-4 ">sıcaklık api</div>
+            <div class="text-black mx-4 mt-2 "> <img src="wind.png" width="15%" height="15%" ax  lt="">Rüzgar</div>
+            <div id="sehir1Ruzgar" class="mt-4">Rüzgar api</div>
+            <div class="text-black mx-4 mt-2 "> <img src="moisturizing.png" width="15%" height="15%" ax  lt="">Nem</div>
+            <div id="sehir1Nem" class="mt-4">Nem api</div>
+            </div>
+            <div class="h-auto text-white bg-[#1b3665] mx-8 my-6 grid grid-cols-2">
+                <div class="mx-4"> <img src="solar-energy.png" alt="" width="20%" height="20%">Santral Durumu</div>
+                <div class="my-8">Veri tabanından çekilecek</div>
+            </div>
+        </div>
+
+         
+
+        <div class="text-white bg-[#1D2E4A] mx-8 my-8 grid grid-rows-auto grid grid-cols-1 gap-4">
+            <div id = "santralAdi2"class="h-1 mx-3 my-4">DORA</div>
+            <div class="h-auto text-white bg-[#97ca81] mx-8 mt-2 grid grid-cols-2">
+                <div class="text-black mx-4"> <img src="plugin.png" width="25%" height="25%" alt="">Üretim miktarı</div>
+                <div class="mt-8 mx-4">dbden çekilecek</div>
+            </div>
+                <div class="text-white bg-[#1dd2e8] mx-8 mt-2 grid grid-cols-2 grid-rows-3">
+                <div class="text-black mx-4 mt-2 "> <img src="thermometer.png" width="15%" height="15%" ax  lt="">Sıcaklık</div>
+                <div id="sehir2Sicaklik" class="mt-4">sıcaklık api</div>
+                <div class="text-black mx-4 mt-2 "> <img src="wind.png" width="15%" height="15%" ax  lt="">Rüzgar</div>
+                <div id="sehir2Ruzgar" class="mt-4">Rüzgar api</div>
+                <div class="text-black mx-4 mt-2 "> <img src="moisturizing.png" width="15%" height="15%" ax  lt="">Nem</div>
+                <div id="sehir2Nem" class="mt-4">Nem api</div>
+                </div>
+                <div class="h-auto text-white bg-[#1b3665] mx-8 my-6 grid grid-cols-2">
+                    <div class="mx-4"> <img src="solar-energy.png" alt="" width="20%" height="20%">Santral Durumu</div>
+                    <div class="my-8">Veri tabanından çekilecek</div>
+                </div>
+            </div>
+
+                 
+   
+            <div class="text-white bg-[#1D2E4A] mx-8 my-8 grid grid-rows-auto grid grid-cols-1 gap-4">
+            <div id = "santralAdi3" class="h-1 mx-3 my-4">DORA</div>
+            <div class="h-auto text-white bg-[#97ca81] mx-8 mt-2 grid grid-cols-2">
+                <div class="text-black mx-4"> <img src="plugin.png" width="25%" height="25%" alt="">Üretim miktarı</div>
+                <div id="uretimMiktari1"class="mt-8 mx-4">dbden çekilecek</div>
+            </div>
+                <div class="text-white bg-[#1dd2e8] mx-8 mt-2 grid grid-cols-2 grid-rows-3">
+                <div class="text-black mx-4 mt-2 "> <img src="thermometer.png" width="15%" height="15%" ax  lt="">Sıcaklık</div>
+                <div id="sehir3Sicaklik" class="mt-4">sıcaklık api</div>
+                <div class="text-black mx-4 mt-2 "> <img src="wind.png" width="15%" height="15%" ax  lt="">Rüzgar</div>
+                <div id="sehir3Ruzgar" class="mt-4">Rüzgar api</div>
+                <div class="text-black mx-4 mt-2 "> <img src="moisturizing.png" width="15%" height="15%" ax  lt="">Nem</div>
+                <div id="sehir3Nem" class="mt-4">Nem api</div>
+                </div>
+                <div class="h-auto text-white bg-[#1b3665] mx-8 my-6 grid grid-cols-2">
+                    <div class="mx-4"> <img src="solar-energy.png" alt="" width="20%" height="20%">Santral Durumu</div>
+                    <div class="my-8">Veri tabanından çekilecek</div>
+                </div>
+            </div>
+            <div class="text-white bg-[#1D2E4A] mx-8 my-8 grid grid-rows-auto grid grid-cols-1 gap-4">
+                <div id = "santralAdi4" class="h-1 mx-3 my-4">DORA</div>
+                <div class="h-auto text-white bg-[#97ca81] mx-8 mt-2 grid grid-cols-2">
+                    <div class="text-black mx-4"> <img src="plugin.png" width="25%" height="25%" alt="">Üretim miktarı</div>
+                    <div class="mt-8 mx-4">dbden çekilecek</div>
+                </div>
+                    <div class="text-white bg-[#1dd2e8] mx-8 mt-2 grid grid-cols-2 grid-rows-3">
+                    <div class="text-black mx-4 mt-2 "> <img src="thermometer.png" width="15%" height="15%" ax  lt="">Sıcaklık</div>
+                    <div id="sehir4Sicaklik" class="mt-4">sıcaklık api</div>
+                    <div class="text-black mx-4 mt-2 "> <img src="wind.png" width="15%" height="15%" ax  lt="">Rüzgar</div>
+                    <div id="sehir4Ruzgar" class="mt-4">Rüzgar api</div>
+                    <div class="text-black mx-4 mt-2 "> <img src="moisturizing.png" width="15%" height="15%" ax  lt="">Nem</div>
+                    <div id="sehir4Nem" class="mt-4">Nem api</div>
+                    </div>
+                    <div class="h-auto text-white bg-[#1b3665] mx-8 my-6 grid grid-cols-2">
+                        <div class="mx-4"> <img src="solar-energy.png" alt="" width="20%" height="20%">Santral Durumu</div>
+                        <div class="my-8">Veri tabanından çekilecek</div>
+                    </div>
+                </div>
+                <div class="text-white bg-[#1D2E4A] mx-8 my-8 grid grid-rows-auto grid grid-cols-1 gap-4">
+                    <div id = "santralAdi5" class="h-1 mx-3 my-4">DORA</div>
+                    <div class="h-auto text-white bg-[#97ca81] mx-8 mt-2 grid grid-cols-2">
+                        <div class="text-black mx-4"> <img src="plugin.png" width="25%" height="25%" alt="">Üretim miktarı</div>
+                        <div class="mt-8 mx-4">dbden çekilecek</div>
+                    </div>
+                        <div class="text-white bg-[#1dd2e8] mx-8 mt-2 grid grid-cols-2 grid-rows-3">
+                        <div class="text-black mx-4 mt-2 "> <img src="thermometer.png" width="15%" height="15%" ax  lt="">Sıcaklık</div>
+                        <div id="sehir5Sicaklik" class="mt-4">sıcaklık api</div>
+                        <div class="text-black mx-4 mt-2 "> <img src="wind.png" width="15%" height="15%" ax  lt="">Rüzgar</div>
+                        <div id="sehir5Ruzgar" class="mt-4">Rüzgar api</div>
+                        <div class="text-black mx-4 mt-2 "> <img src="moisturizing.png" width="15%" height="15%" ax  lt="">Nem</div>
+                        <div id="sehir5Nem" class="mt-4">Nem api</div>
+                        </div>
+                        <div class="h-auto text-white bg-[#1b3665] mx-8 my-6 grid grid-cols-2">
+                            <div class="mx-4"> <img src="solar-energy.png" alt="" width="20%" height="20%">Santral Durumu</div>
+                            <div class="my-8">Veri tabanından çekilecek</div>
+                        </div>
+                    </div>
+                    <div class="text-white bg-[#1D2E4A] mx-8 my-8 grid grid-rows-auto grid grid-cols-1 gap-4">
+                        <div id = "santralAdi6" class="h-1 mx-3 my-4">DORA</div>
+                        <div class="h-auto text-white bg-[#97ca81] mx-8 mt-2 grid grid-cols-2">
+                            <div class="text-black mx-4"> <img src="plugin.png" width="25%" height="25%" alt="">Üretim miktarı</div>
+                            <div class="mt-8 mx-4">dbden çekilecek</div>
+                        </div>
+                            <div class="text-white bg-[#1dd2e8] mx-8 mt-2 grid grid-cols-2 grid-rows-3">
+                            <div class="text-black mx-4 mt-2 "> <img src="thermometer.png" width="15%" height="15%" ax  lt="">Sıcaklık</div>
+                            <div id="sehir6Sicaklik" class="mt-4">sıcaklık api</div>
+                            <div class="text-black mx-4 mt-2 "> <img src="wind.png" width="15%" height="15%" ax  lt="">Rüzgar</div>
+                            <div id="sehir6Ruzgar" class="mt-4">Rüzgar api</div>
+                            <div class="text-black mx-4 mt-2 "> <img src="moisturizing.png" width="15%" height="15%" ax  lt="">Nem</div>
+                            <div id="sehir6Nem" class="mt-4">Nem api</div>
+                            </div>
+                            <div class="h-auto text-white bg-[#1b3665] mx-8 my-6 grid grid-cols-2">
+                                <div class="mx-4"> <img src="solar-energy.png" alt="" width="20%" height="20%">Santral Durumu</div>
+                                <div class="my-8">Veri tabanından çekilecek</div>
+                            </div>
+                        </div>
+        </div>
+        <script>
+            // MongoDB'den verileri çeken ve HTML sayfasında gösteren fonksiyon
+            async function getData() {
+              try {
+                const response = await fetch('/recep');
+                const users = await response.json();
+        
+                const santralAdi = document.getElementById('santralAdi6');
+                users.forEach(user => {
+                  const li = document.createElement('li');
+                  li.textContent = user.santralAdı;
+                  userList.appendChild(li);
+                });
+              } catch (error) {
+                console.error('Hata:', error);
+              }
+            }
+        
+            // Sayfa yüklendiğinde getUsers fonksiyonunu çağır
+            window.addEventListener('DOMContentLoaded', getData);
+          </script>  
+
+
+        
+   
+
+
+
+</body>
+</html>
